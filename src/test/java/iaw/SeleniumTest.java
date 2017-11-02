@@ -29,7 +29,6 @@ public class SeleniumTest {
 		options.addArguments("--start-maximized");
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.get("http://localhost:8080/login.html");
 		return driver;
 	}
 
